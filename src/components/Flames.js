@@ -70,7 +70,7 @@ export default function FlamesGame() {
         data-testid="input1"
         name="name1"
         type="text"
-        placeholder="Enter name 1"
+        placeholder="Enter first name"
         value={firstName}
         onChange={(e) => setFirstName(e.target.value)}
       />
@@ -78,7 +78,7 @@ export default function FlamesGame() {
         data-testid="input2"
         name="name2"
         type="text"
-        placeholder="Enter name 2"
+        placeholder="Enter second name"
         value={secondName}
         onChange={(e) => setSecondName(e.target.value)}
       />
