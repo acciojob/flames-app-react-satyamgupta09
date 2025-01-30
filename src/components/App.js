@@ -15,12 +15,10 @@ export default function App() {
     let s = firstName;
     let q = secondName;
 
-    // Step 1: Count common characters between both names
     let commonCount = 0;
     let sArr = s.split("");
     let qArr = q.split("");
 
-    // Count common characters
     sArr.forEach((char) => {
       const commonIndex = qArr.indexOf(char);
       if (commonIndex !== -1) {
@@ -28,12 +26,9 @@ export default function App() {
         qArr.splice(commonIndex, 1);
       }
     });
-
-    // Step 2: Calculate remaining length after subtracting common characters
     let remainingLength = s.length + q.length - commonCount * 2;
     let result = remainingLength % 6;
 
-    // Step 3: Determine relationship status
     switch (result) {
       case 0:
         setRelationShipStatus("Siblings");
