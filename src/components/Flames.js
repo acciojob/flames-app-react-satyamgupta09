@@ -61,33 +61,65 @@ export default function FlamesGame() {
 
   return (
     <div>
-      <input
-        data-testid="input1"
-        name="name1"
-        type="text"
-        placeholder="Enter first name"
-        value={firstName}
-        onChange={(e) => setFirstName(e.target.value)}
-      />
-      <input
-        data-testid="input2"
-        name="name2"
-        type="text"
-        placeholder="Enter second name"
-        value={secondName}
-        onChange={(e) => setSecondName(e.target.value)}
-      />
-      <button
-        data-testid="calculate_relationship"
-        name="calculate_relationship"
-        onClick={handleClick}
-      >
-        Calculate Relationship Future
-      </button>
-      <button data-testid="clear" name="clear" onClick={handleClear}>
-        Clear
-      </button>
-      <h3 data-testid="answer">{relationShipStatus}</h3>
+      // <input
+      //   data-testid="input1"
+      //   name="name1"
+      //   type="text"
+      //   placeholder="Enter first name"
+      //   value={firstName}
+      //   onChange={(e) => setFirstName(e.target.value)}
+      // />
+      // <input
+      //   data-testid="input2"
+      //   name="name2"
+      //   type="text"
+      //   placeholder="Enter second name"
+      //   value={secondName}
+      //   onChange={(e) => setSecondName(e.target.value)}
+      // />
+      // <button
+      //   data-testid="calculate_relationship"
+      //   name="calculate_relationship"
+      //   onClick={handleClick}
+      // >
+      //   Calculate Relationship Future
+      // </button>
+      // <button data-testid="clear" name="clear" onClick={handleClear}>
+      //   Clear
+      // </button>
+      // <h3 data-testid="answer">{relationShipStatus}</h3>
+    <input
+  data-testid="input1"
+  name="name1"
+  type="text"
+  placeholder="Enter first name"
+  value={firstName}
+  onChange={(e) => setFirstName(e.target.value)}
+/>
+
+<input
+  data-testid="input2"
+  name="name2"
+  type="text"
+  placeholder="Enter second name"
+  value={secondName}
+  onChange={(e) => setSecondName(e.target.value)}
+/>
+
+<button
+  data-testid="calculate_relationship"
+  name="calculate_relationship"
+  onClick={handleClick}
+>
+  Calculate Relationship Future
+</button>
+
+<button data-testid="clear" name="clear" onClick={handleClear}>
+  Clear
+</button>
+
+<h3 data-testid="answer">{relationShipStatus}</h3>
+
     </div>
   );
 }
